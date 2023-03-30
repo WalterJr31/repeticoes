@@ -27,6 +27,7 @@ if($idade >= 18){
 PROBLEMA: crie um código que verifique a cor informada pelo usuário e gere um código hexadecimal para formatar a cor do texto. As cores permitidas são: azul, vermelho e verde. Caso seja diferente , deixar a letra preta ;
 */
 
+/*
 $corEscolhida = "vermelho";
 $corHexa = "";
 
@@ -46,6 +47,8 @@ switch ($corEscolhida) {
 }
 
 echo "<h1 style='color:$corHexa'>Olá</h1>";
+*/
+
 
 #### ESTRUTURA DE REPETIÇÃO
 
@@ -146,6 +149,7 @@ echo "<br>";
 #### ESTRUTURA DE REPETIÇÃO & ARRAY
  
 
+/*
 $produtos = ['🎃','🎨','⚽','🥣','🥚']; # Array
 
 echo $produtos[0];
@@ -157,10 +161,16 @@ while( $i < 5){
     echo $produtos[$i];
     $i++; // $i = $i + 1
 }
+*/
+
+echo $_POST["usuario"] ?? "";
+echo $_POST["name"] ?? "";
+echo $_POST["sobrenome"] ?? "";
+echo $_POST["cidade"] ?? "";
+echo $_POST["estado"] ?? "";
+echo $_POST["telefone"] ?? "";
+echo $_POST["email"] ?? "";
+echo $_POST["senha"] ?? "";
 ?>
 
-<form action="recebe.php" method="post">    
-Usuário:<input name="usuario">    
-Senha:<input name="senha" type="password">    
-<button type="submit">Enviar</button>
-</form>
+
